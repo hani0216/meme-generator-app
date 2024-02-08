@@ -39,10 +39,16 @@ class Meme extends Component {
             height: "400px",
             width: "400px"
         };
+        const styleDiv={
+            height:"50px",
+            width:"120px"
+            
+
+        };
         return (
-            <div>
-                <input type="text" placeholder="type something" onChange={this.printText}></input>
-                <button onClick={this.changeImg}>Click here</button>
+            <div style={styleDiv}>
+                <input type="text" placeholder="type something" onChange={this.printText}  ></input>
+                <button  onClick={this.changeImg}>Click here</button>
                 <div>
                     <img src={this.state.img} style={styleImg} alt="meme"></img>
                     <h2>{this.state.text}</h2>
